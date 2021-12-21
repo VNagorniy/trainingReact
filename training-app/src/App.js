@@ -26,18 +26,17 @@ class WhoAmI extends Component {
     const { name, surname, link } = this.props;
     const { position, years } = this.state;
     return (
-      <div>
+      <>
         <button onClick={this.nextYear}>+++</button>
         <h1>
-          My name is {name}, surname - {surname}, age - {years}, position -
-          {position}
+          My name is {name}, surname - {surname}, age - {years}, position -{position}
         </h1>
         <a href={link}>My profile</a>
         <form>
           <span>Введите должность</span>
           <input type='text' onChange={this.commitInputChanges} />
         </form>
-      </div>
+      </>
     );
   }
 }
