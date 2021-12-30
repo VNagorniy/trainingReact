@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import styled from 'styled-components';
 import './App.css';
 
 class WhoAmI extends Component {
@@ -41,12 +42,17 @@ class WhoAmI extends Component {
   }
 }
 
+const Wrapper = styled.div`
+  width: 600px;
+  margin: 80px auto 0 auto;
+`;
+
 function App() {
   return (
-    <div className='App'>
+    <Wrapper>
       <WhoAmI name='Vova' surname='Nag' link='facebook.com' />
       <WhoAmI name='Igor' surname='Nsg' link='vk.com' />
-    </div>
+    </Wrapper>
   );
 }
 
